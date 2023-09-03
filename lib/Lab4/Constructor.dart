@@ -15,7 +15,7 @@ void main(){
 class Student{
 
   Student(){
-    print('hala meww 11');
+    print('hello bsbs');
   }
   
   Student.namedConst(String name){
