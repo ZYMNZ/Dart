@@ -47,7 +47,6 @@ class MyApp extends StatelessWidget {
         ),
         body: AlignmentDemo(),
       ),
-
     );
   }
 }
@@ -68,9 +67,21 @@ class AlignmentDemo extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(color: Colors.red, height: 50, width: 50,),
-            Container(color: Colors.green, height: 50, width: 50,),
-            Container(color: Colors.blue, height: 50, width: 50,),
+            Container(
+              color: Colors.red,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.green,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.blue,
+              height: 50,
+              width: 50,
+            ),
           ],
         ),
       ),
@@ -95,9 +106,21 @@ class AlignmentDemo extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(color: Colors.red, height: 50, width: 50,),
-            Container(color: Colors.green, height: 50, width: 50,),
-            Container(color: Colors.blue, height: 50, width: 50,),
+            Container(
+              color: Colors.red,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.green,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.blue,
+              height: 50,
+              width: 50,
+            ),
           ],
         ),
       ),
@@ -125,9 +148,21 @@ class AlignmentDemo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(color: Colors.red, height: 100, width: 50,),
-            Container(color: Colors.green, height: 50, width: 50,),
-            Container(color: Colors.blue, height: 180, width: 50,),
+            Container(
+              color: Colors.red,
+              height: 100,
+              width: 50,
+            ),
+            Container(
+              color: Colors.green,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.blue,
+              height: 180,
+              width: 50,
+            ),
           ],
         ),
       ),
@@ -154,15 +189,28 @@ class AlignmentDemo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(color: Colors.red, height: 50, width: 50,),
-            Container(color: Colors.green, height: 50, width: 50,),
-            Container(color: Colors.blue, height: 50, width: 50,),
+            Container(
+              color: Colors.red,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.green,
+              height: 50,
+              width: 50,
+            ),
+            Container(
+              color: Colors.blue,
+              height: 50,
+              width: 50,
+            ),
           ],
         ),
       ),
     );
   }
-}*/
+}
+*/
 /*
 class AlignmentDemo extends StatelessWidget {
   const AlignmentDemo({super.key});
@@ -173,11 +221,15 @@ class AlignmentDemo extends StatelessWidget {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(color: Colors.blue, padding: EdgeInsets.all(20.0), margin: EdgeInsets.all(20.0),child: Text('Container with padding and margin', style: TextStyle(color:Colors.white)),),
-
-          ],
-
+        children: [
+          Container(
+            color: Colors.blue,
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.all(20.0),
+            child: Text('Container with padding and margin',
+                style: TextStyle(color: Colors.white)),
+          ),
+        ],
       ),
     );
   }
@@ -195,19 +247,29 @@ class AlignmentDemo extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Container(color: Colors.blue, padding: EdgeInsets.all(20.0), margin: EdgeInsets.all(20.0),child: Text('Container with padding and margin', style: TextStyle(color:Colors.white)),),
-        SizedBox(
-          height: 16.0,
-        ),
-          Container(color: Colors.green, padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0), margin: EdgeInsets.only(top: 80.0),child: Text('Custon container with padding and margin', style: TextStyle(color:Colors.white)),),
+          Container(
+            color: Colors.blue,
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.all(20.0),
+            child: Text('Container with padding and margin',
+                style: TextStyle(color: Colors.white)),
+          ),
+          SizedBox(
+            height: 16.0,
+          ),
+          Container(
+            color: Colors.green,
+            padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            margin: EdgeInsets.only(top: 80.0),
+            child: Text('Custon container with padding and margin',
+                style: TextStyle(color: Colors.white)),
+          ),
         ],
-
       ),
     );
   }
 }
-
- */
+*/
 /*
 class AlignmentDemo extends StatelessWidget {
   const AlignmentDemo({super.key});
@@ -219,22 +281,39 @@ class AlignmentDemo extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Container(color: Colors.blue, padding: EdgeInsets.all(20.0), margin: EdgeInsets.all(20.0),child: Text('Container with padding and margin', style: TextStyle(color:Colors.white)),),
+          Container(
+            color: Colors.blue,
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.all(20.0),
+            child: Text('Container with padding and margin',
+                style: TextStyle(color: Colors.white)),
+          ),
           SizedBox(
             height: 16.0,
           ),
-          Container(color: Colors.green, padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0), margin: EdgeInsets.only(top: 80.0),child: Text('Custon container with padding and margin', style: TextStyle(color:Colors.white)),),
+          Container(
+            color: Colors.green,
+            padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+            margin: EdgeInsets.only(top: 80.0),
+            child: Text('Custon container with padding and margin',
+                style: TextStyle(color: Colors.white)),
+          ),
           SizedBox(
             height: 16.0,
           ),
-          Container(color: Colors.orange, padding: EdgeInsets.fromLTRB(50.0, 10.0, 30.0, 10.0), margin: EdgeInsets.symmetric(horizontal: 50.0),child: Text('Padding and margin on ALL sides', style: TextStyle(color:Colors.white)),),
+          Container(
+            color: Colors.orange,
+            padding: EdgeInsets.fromLTRB(50.0, 10.0, 30.0, 10.0),
+            margin: EdgeInsets.symmetric(horizontal: 50.0),
+            child: Text('Padding and margin on ALL sides',
+                style: TextStyle(color: Colors.white)),
+          ),
         ],
-
       ),
     );
   }
 }
- */
+*/
 /*
 //styling text
 class AlignmentDemo extends StatelessWidget {
@@ -249,16 +328,25 @@ class AlignmentDemo extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text('Defualt Text'),
-          SizedBox(height: 16.0,),
+          SizedBox(
+            height: 16.0,
+          ),
           //styled text
-          Text('Styled Text', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color:Colors.blue, letterSpacing: 1.5, decoration: TextDecoration.underline, decorationColor: Colors.red, decorationStyle: TextDecorationStyle.dotted))
+          Text('Styled Text',
+              style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                  letterSpacing: 1.5,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.red,
+                  decorationStyle: TextDecorationStyle.dotted))
         ],
-
-
       ),
     );
   }
-}*/
+}
+*/
 /*
 //text styling
 class AlignmentDemo extends StatelessWidget {
@@ -273,31 +361,63 @@ class AlignmentDemo extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text('Defualt Text'),
-          SizedBox(height: 16.0,),
+          SizedBox(
+            height: 16.0,
+          ),
           //styled text
-          Text('Styled Text', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color:Colors.blue, letterSpacing: 1.5, decoration: TextDecoration.underline, decorationColor: Colors.red, decorationStyle: TextDecorationStyle.dotted)),
-          SizedBox(height: 16.0,),
+          Text('Styled Text',
+              style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                  letterSpacing: 1.5,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.red,
+                  decorationStyle: TextDecorationStyle.dotted)),
+          SizedBox(
+            height: 16.0,
+          ),
           //text overflow
-          Container(width:100, child: Text('this is a long text that should overflow the container', overflow: TextOverflow.ellipsis,),),
-          SizedBox(height: 16.0,),
+          Container(
+            width: 100,
+            child: Text(
+              'this is a long text that should overflow the container',
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+          SizedBox(
+            height: 16.0,
+          ),
           //text scaling
-          Text('text scaling', textScaleFactor: 4.5,),
-          SizedBox(height: 16.0,),
+          Text(
+            'text scaling',
+            textScaleFactor: 4.5,
+          ),
+          SizedBox(
+            height: 16.0,
+          ),
           //rich text
-          RichText(text: TextSpan(
-              style: DefaultTextStyle.of(context).style,
-              children: [TextSpan( text:'Rich Text', style: TextStyle(fontWeight: FontWeight.bold),),
-
-                        TextSpan( text:'Rich Text with different styles', style: TextStyle(color: Colors.green, fontSize: 18, fontWeight: FontWeight.normal),)]
-          ))
+          RichText(
+              text: TextSpan(
+                  style: DefaultTextStyle.of(context).style,
+                  children: [
+                TextSpan(
+                  text: 'Rich Text',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                TextSpan(
+                  text: 'Rich Text with different styles',
+                  style: TextStyle(
+                      color: Colors.green,
+                      fontSize: 18,
+                      fontWeight: FontWeight.normal),
+                )
+              ]))
         ],
-
-
       ),
     );
   }
 }
-
 */
 /*
 class MyApp extends StatelessWidget {
@@ -311,65 +431,114 @@ class MyApp extends StatelessWidget {
           title: Text("ListView Demo"),
         ),
         body: ListView(
-          children: [ListTile(title: Center(child: Text('Item 1'),),
-          subtitle: Center(
-            child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
-          ),
-          trailing: Icon(Icons.star, color: Colors.yellow),
-            contentPadding: EdgeInsets.all(16.0),
-            tileColor: Colors.blue,
-          ),
-            ListTile(title: Center(child: Text('Item 2'),),
-              subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
+          children: [
+            ListTile(
+              title: Center(
+                child: Text('Item 1'),
               ),
-              trailing: Icon(Icons.star, color: Colors.yellow),
-              contentPadding: EdgeInsets.all(16.0),
-              tileColor: Colors.green,
-            ),
-            ListTile(title: Center(child: Text('Item 3'),),
               subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
-              ),
-              trailing: Icon(Icons.star, color: Colors.yellow),
-              contentPadding: EdgeInsets.all(16.0),
-              tileColor: Colors.yellow,
-            ),
-            ListTile(title: Center(child: Text('Item 4'),),
-              subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
-              ),
-              trailing: Icon(Icons.star, color: Colors.yellow),
-              contentPadding: EdgeInsets.all(16.0),
-              tileColor: Colors.red,
-            ),
-            ListTile(title: Center(child: Text('Item 5'),),
-              subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
               ),
               trailing: Icon(Icons.star, color: Colors.yellow),
               contentPadding: EdgeInsets.all(16.0),
               tileColor: Colors.blue,
             ),
-            ListTile(title: Center(child: Text('Item 6'),),
+            ListTile(
+              title: Center(
+                child: Text('Item 2'),
+              ),
               subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
               ),
               trailing: Icon(Icons.star, color: Colors.yellow),
               contentPadding: EdgeInsets.all(16.0),
               tileColor: Colors.green,
             ),
-            ListTile(title: Center(child: Text('Item 7'),),
+            ListTile(
+              title: Center(
+                child: Text('Item 3'),
+              ),
               subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
               ),
               trailing: Icon(Icons.star, color: Colors.yellow),
               contentPadding: EdgeInsets.all(16.0),
               tileColor: Colors.yellow,
             ),
-            ListTile(title: Center(child: Text('Item 8'),),
+            ListTile(
+              title: Center(
+                child: Text('Item 4'),
+              ),
               subtitle: Center(
-                child: ElevatedButton(onPressed: (){}, child: Text('Click me'),),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
+              ),
+              trailing: Icon(Icons.star, color: Colors.yellow),
+              contentPadding: EdgeInsets.all(16.0),
+              tileColor: Colors.red,
+            ),
+            ListTile(
+              title: Center(
+                child: Text('Item 5'),
+              ),
+              subtitle: Center(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
+              ),
+              trailing: Icon(Icons.star, color: Colors.yellow),
+              contentPadding: EdgeInsets.all(16.0),
+              tileColor: Colors.blue,
+            ),
+            ListTile(
+              title: Center(
+                child: Text('Item 6'),
+              ),
+              subtitle: Center(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
+              ),
+              trailing: Icon(Icons.star, color: Colors.yellow),
+              contentPadding: EdgeInsets.all(16.0),
+              tileColor: Colors.green,
+            ),
+            ListTile(
+              title: Center(
+                child: Text('Item 7'),
+              ),
+              subtitle: Center(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
+              ),
+              trailing: Icon(Icons.star, color: Colors.yellow),
+              contentPadding: EdgeInsets.all(16.0),
+              tileColor: Colors.yellow,
+            ),
+            ListTile(
+              title: Center(
+                child: Text('Item 8'),
+              ),
+              subtitle: Center(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Click me'),
+                ),
               ),
               trailing: Icon(Icons.star, color: Colors.yellow),
               contentPadding: EdgeInsets.all(16.0),
@@ -378,12 +547,10 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }
-
- */
+*/
 /*
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
