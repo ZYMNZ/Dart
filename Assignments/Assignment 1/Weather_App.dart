@@ -11,22 +11,35 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
+          body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: <Color>[Colors.orange, Colors.yellow])),
+        child: Column(
           children: [
             SearchBarPart(),
             CityPart(),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             DegreePart(),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             Statement(),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             DaysWeather(),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             Info()
           ],
         ),
-        backgroundColor: MaterialStateColor.resolveWith((states) => Colors.amberAccent),
-      ),
+      )),
     );
   }
 }
@@ -36,19 +49,24 @@ class SearchBarPart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20,vertical: 40),
-      padding: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
-      child: Center(
-        child: Row(
-          children: [
-            Icon(Icons.search),
-            SizedBox(width: 10,),
-            Text("Cork")
-          ],
+    return Card(
+      margin: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+        child:Container(
+          padding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+          child: Center(
+            child: Row(
+              children: [
+                Icon(Icons.search),
+                SizedBox(
+                  width: 13,
+                ),
+                Text("Cork")
+              ],
+            ),
+          ),
+          color: MaterialStateColor.resolveWith((states) => Colors.white),
         ),
-      ),
-      color: MaterialStateColor.resolveWith((states) => Colors.white),
+      elevation: 10,
     );
   }
 }
@@ -63,17 +81,13 @@ class CityPart extends StatelessWidget {
         child: Column(
           children: [
             Text(
-                "CORK",
+              "CORK",
               style: TextStyle(
-
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.location_on),
-                Text("-8.47 , 51.9")
-              ],
+              children: [Icon(Icons.location_on), Text("-8.47 , 51.9")],
             )
           ],
         ),
@@ -96,13 +110,13 @@ class DegreePart extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text('16',style: TextStyle(
-                      
+                    Text(
+                      '16',
+                      style: TextStyle(),
                     ),
-                    ),
-                    Text('\u00B0C',style: TextStyle(
-                      
-                    ),
+                    Text(
+                      '\u00B0C',
+                      style: TextStyle(),
                     ),
                   ],
                 ),
@@ -110,9 +124,7 @@ class DegreePart extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            child: Icon(Icons.wb_cloudy)
-          )
+          Container(child: Icon(Icons.wb_cloudy))
         ],
       ),
     );
@@ -120,16 +132,13 @@ class DegreePart extends StatelessWidget {
 }
 
 class Statement extends StatelessWidget {
-  const Statement ({super.key});
+  const Statement({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text("Broken Clouds",
-        style: TextStyle(
-
-        )),
+        child: Text("Broken Clouds", style: TextStyle()),
       ),
     );
   }
@@ -144,7 +153,7 @@ class DaysWeather extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-            RowChildOne(),
+          RowChildOne(),
           RowChildTwo(),
           RowChildThree(),
         ],
@@ -167,7 +176,9 @@ class RowChildOne extends StatelessWidget {
               Text("16\u00B0"),
             ],
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           Icon(Icons.cloud)
         ],
       ),
@@ -189,7 +200,9 @@ class RowChildTwo extends StatelessWidget {
               Text("16\u00B0"),
             ],
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           Icon(Icons.cloud)
         ],
       ),
@@ -211,7 +224,9 @@ class RowChildThree extends StatelessWidget {
               Text("20\u00B0"),
             ],
           ),
-          SizedBox(width: 8,),
+          SizedBox(
+            width: 8,
+          ),
           Icon(Icons.cloud)
         ],
       ),
@@ -230,11 +245,13 @@ class Info extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(Icons.watch_later_outlined),
-            SizedBox(width: 10,),
-            Text("Last updated on 2:49 PM",
-            style: TextStyle(
-
-            ),),
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              "Last updated on 2:49 PM",
+              style: TextStyle(),
+            ),
           ],
         ),
       ),
