@@ -1,0 +1,136 @@
+import "package:flutter/material.dart";
+
+void main() {
+  runApp(MyApp());
+}
+/*
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: const FirstScreen()
+    );
+  }
+}
+*/
+
+/*
+class FirstScreen extends StatelessWidget {
+  const FirstScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("First screen")),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              // Pass the context and the material page route to change screens
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      SecondScreen(data: "Simple Routing data")),
+            );
+          },
+          child: Text("Go to second screen"),
+        ),
+      ),
+    );
+  }
+}
+*/
+
+class FirstScreen extends StatelessWidget {
+  const FirstScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("First Screen")),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(
+              context,
+              "/second",
+              // Be able to pass arguments to the screen
+              arguments: "namedROutingdata"
+            );
+          },
+          child: Text("Go to second screen"),
+        )
+      )
+    );
+  }
+}
+class SecondScreen extends StatelessWidget {
+  // data could be null
+
+  const SecondScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // Get the arguments sent from the push navigator command
+    RouteSettings? settings = ModalRoute.of(context)?.settings;
+    // final String? data = settings.arguments as String?;
+    final String? data = ModalRoute.of(context)?.settings.arguments as String?;
+    return Scaffold(
+        appBar: AppBar(title: Text("Second Screen")),
+        body: Center(
+            child:
+            Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Text("Data from first screen: $data"),
+              ElevatedButton(
+                  onPressed: () {
+                    // Remove current screen
+                    Navigator.pop(context);
+                  },
+                  child: Text("Back to first screen"))
+            ])));
+  }
+}
+
+
+/*
+class SecondScreen extends StatelessWidget {
+  final String data;
+
+  // Require the data field for the constructor
+  SecondScreen({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text("Second Screen")),
+        body: Center(
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text("Data from first screen: $data"),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text("Back to first screen"))
+        ])));
+  }
+}*/
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      // initial route of widget
+      initialRoute: "/",
+      routes: {
+        // Instantiate routes for first screen and second screen through string
+        "/": (context) => FirstScreen(),
+        "/second": (context) => SecondScreen(),
+      }
+    );
+  }
+}
