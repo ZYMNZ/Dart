@@ -1,4 +1,4 @@
-## Learning Dart Language
+## Learning Dart Language / Flutter
 - Syntax
 - connecting to database
    - CRUD
