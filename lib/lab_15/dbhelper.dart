@@ -9,7 +9,7 @@ class Mydb{
   Future open() async{
     //get a location using getDatabasepath
 
-    var databasePath = await getDatabasesPath();
+    var databasePath = await getDatabasesPath(); 
     String path = join(databasePath,"students.db");
     db = await openDatabase(
         path,
