@@ -96,7 +96,7 @@ class Geo {
 
   Map<String, dynamic> toJson() => {
     "lat": lat,
-    "lng": lng,
+    "lng": lng, 
   };
 }
 
