@@ -4,7 +4,7 @@ import 'package:sqlcarcrud_thirteenth_flutter/car.dart';
 
 class DatabaseHelper{
 
-  static final _databaseName = 'cardb.db';
+  static final _databaseName = 'cardb.db'; 
   static final _databaseversion = 1;
 
   static final table = 'cars_table';
