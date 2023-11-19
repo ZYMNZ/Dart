@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
-}
+} 
 //Tables
 /*
 class MyApp extends StatelessWidget {
