@@ -2,7 +2,7 @@ import 'question.dart';
 
 class Brainquiz{
   int _questionno = 0;
-
+ 
   List<Question> _quesbank = [
     Question(q: "You can leas a cow down stairs but not up stairs", a: false),
     Question(q: "Berlin is the capital of Germany", a: true),
