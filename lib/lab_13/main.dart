@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
           body: TabBarView(
             children: [
-
+              //INSERT
               Center(
                 child: Column(
                   children: [
@@ -114,7 +114,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-
+              
+              //VIEW
               Container(
                 child: ListView.builder(
                     padding: EdgeInsets.all(8),
@@ -144,7 +145,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
 
-
+              //SEARCH
               Center(
                 child: Column(
                   children: [
@@ -195,8 +196,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
 
-              //4
-
+              //UPDATE
               Center(
                 child: Column(
                   children: [
@@ -247,9 +247,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
 
 
-              // 5
-
-
+              // DELETE
               Center(
                 child: Column(
                   children: [
