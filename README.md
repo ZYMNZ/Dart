@@ -1,6 +1,5 @@
 ## Learning Dart Language / Flutter
-- Syntax
-- connecting to database
+- connecting to the database
    - CRUD
-- api calls
+- API calls
 <br> and more...
